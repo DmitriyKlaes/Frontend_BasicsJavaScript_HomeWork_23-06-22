@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+label,
+button,
+svg {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.product-box {
+  margin-bottom: 95px;
+  margin-left: 34px;
+  margin-right: 34px;
+}
+.product-box_heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.product-box_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
+  text-align: center;
+}
+.product-box_content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 360px));
+  gap: 30px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  justify-content: center;
+}
+
+.product_item {
+  background: #f8f8f8;
+  position: relative;
+}
+.product_item_hover_img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.product_item_img_main {
+  max-width: 100%;
+  height: auto;
+}
+.product_item:hover .product_item_hover_img {
+  opacity: 100%;
+}
+.product_item_content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 16px;
+  max-width: 100%;
+  height: auto;
+}
+.product_item_heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.product_item_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.product_item_price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  order: 2;
+  flex-grow: 0;
+  color: #F16D7F;
+}
+
+.top_content_button {
+  background-color: inherit;
+  padding: 15px 39px;
+  border: 1px solid #F16D7F;
+  margin: 0 auto;
+  justify-content: center;
+  display: block;
+  color: #F16D7F;
+  transition: color 0.3s, background-color 0.3s;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.top_content_button:hover {
+  background-color: #F16D7F;
+  color: #FFF;
+}
+.top_content_button_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: color 0.3s;
+}/*# sourceMappingURL=style.css.map */
